@@ -5,11 +5,15 @@ class Cart{
   this.itemQuantity = iq
   }
   //Type the instance functions below this comment.
-  this.addItem = function(i,q){
+  addItem(i,q){
     this.itemList.push(i);
     this.itemQuantity.push(q);
   }
-  this.totalCart = function(){
-    let total = this.itemList * this,itemQuantity;
+  totalCart(){
+    let total = this.itemList * this.itemQuantity;
+    return total;
+  }
+  subCart(days){
+
   }
 }
